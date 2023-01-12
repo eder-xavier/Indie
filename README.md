@@ -1,3 +1,3 @@
 # Indie
  Best Software ever
-<a href="home.html">Clique aqui para acessar o site</a>
+<a href="index.html">Clique aqui para acessar o site</a>
