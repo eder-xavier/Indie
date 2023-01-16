@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body{
+        background: url(../imagens/arvoreP.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    body{
+        background: url(../imagens/arvoreM.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+}
+
+@media screen and (min-width: 1199px) {
+
+    body{
+        background: url(../imagens/arvoreG.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+}
+
+
+
+
+
+

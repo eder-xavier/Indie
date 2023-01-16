@@ -8,12 +8,18 @@
     box-sizing: border-box;
 }
 
-body, html{
-    background: url(../imagens/arvore.jpg);
-    background-size: cover;
-    display: block;
+
+html{
     height: 100vh;
-    width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+
+    body{
+        background: url(../imagens/arvore.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
 }
 
 
@@ -22,6 +28,7 @@ header{
     */
     padding-top: 10px;
 }
+
 nav > h1{
     text-align: center;
     color: white;
