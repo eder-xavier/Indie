@@ -17,7 +17,7 @@ $senha = $_POST['senha'];
 $result = mysqli_query($conexao, "INSERT INTO users(usuario,nome, email, senha)
 VALUES ('$usuario', '$nome', '$email', '$senha' ) " );
 
-
+header('Location: ../htmls/inicio/login.html');
 
 /*
 array_push($geral ['usuario'], $usuario);

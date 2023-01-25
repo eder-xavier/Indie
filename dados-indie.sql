@@ -1,1 +1,4 @@
-SELECT * FROM forms.users;
+SELECT 
+    *
+FROM
+    forms.users;
