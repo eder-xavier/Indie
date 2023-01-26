@@ -1,5 +1,7 @@
 <?php
 
+    //CONEXÃO ENTRE O PROGRAMA E O BANCO DE DADOS
+    
     $dbHost = 'LocalHost';
     $dbUsername = 'root';
     $dbPassword = '';

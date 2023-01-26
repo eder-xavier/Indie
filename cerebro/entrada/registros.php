@@ -1,6 +1,17 @@
 <?php
-    include_once('../cerebro/set.php');
-    $sql = "SELECT * FROM users ORDER BY id DESC";
+    session_start();
+    include_once('set.php');
+
+    //$logado = $_SESSION['usuario'];
+    if(!empty($_GET['search']))
+    {
+        $data = $_GET['search'];
+        $sql = "SELECT * FROM users WHERE id LIKE '%$data%' or nome LIKE '%$data%' or email LIKE '%$data%' ORDER BY id DESC";
+    }
+    else
+    {
+        $sql = "SELECT * FROM users ORDER BY id DESC";
+    }
     $result = $conexao->query($sql);
 ?>
 
@@ -11,7 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registros</title>
-    <link rel="stylesheet" href="../estilos/regis.css">
+    <link rel="stylesheet" href="../../estilos/regis.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200' />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
@@ -20,7 +31,10 @@
     <header>
         <h2>Registros</h1>
     </header>
+
     <main>
+        
+
         <div>
             <table class="table" id="tabela">
                 <thead>
@@ -42,11 +56,11 @@
                         echo "<td>".$regis_user['usuario']."</td>";
                         echo "<td>".$regis_user['email']."</td>";
                         echo "<td>".$regis_user['senha']."</td>";
-                        echo "<td id='config'>  <a href='#'><span id='conf'  class='material-symbols-outlined'>
+                        echo "<td id='config'>  <a href='edit.php?id=$regis_user[id]'><span id='conf'  class='material-symbols-outlined'>
                         settings_account_box
                         </span></a>
                         
-                        <a href='#'><span id='trash' class='material-symbols-outlined'>
+                        <a href='excluir.php?id=$regis_user[id]'><span id='trash' class='material-symbols-outlined'>
                         delete
                         </span>
                         </a>";

@@ -1,12 +1,24 @@
 <?php
     session_start();
-    //print_r($_SESSION);
-    if((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha'])== true)){
+    include_once('set.php');
+
+    if((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha']) == true))
+    {
         unset($_SESSION['usuario']);
         unset($_SESSION['senha']);
-        header('Location: ../inicio/login.html');
+        header('Location: ../../htmls/inicio/login.php');
     }
-    $login = $_SESSION['usuario'];
+    $logado = $_SESSION['usuario'];
+    if(!empty($_GET['search']))
+    {
+        $data = $_GET['search'];
+        $sql = "SELECT * FROM users WHERE id LIKE '%$data%' or nome LIKE '%$data%' or email LIKE '%$data%' ORDER BY id DESC";
+    }
+    else
+    {
+        $sql = "SELECT * FROM users ORDER BY id DESC";
+    }
+    $result = $conexao->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -17,9 +29,21 @@
     <title>Indie</title>
 </head>
 <body>
+
+    <header>
+
+    </header>
+    <main>
+    Indiana jones
+    </main>
+    <footer>
+
+    </footer>
+
     <!--
     <a id='exit' href="../../cerebro/exit.php">Log out</a>
     -->
+
 </body>
 
 </html>

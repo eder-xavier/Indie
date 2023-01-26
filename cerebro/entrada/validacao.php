@@ -17,19 +17,19 @@
         {
             unset($_SESSION['usuario']);
             unset($_SESSION['senha']);
-            header('Location: ../htmls/inicio/login.html');
+            header('Location: ../../htmls/inicio/login.html');
         }
         else{
             $_SESSION['usuario'] = $usuario;
             $_SESSION['senha'] = $senha;
-            header('Location: ../htmls/meio/principal.php');
+            header('Location: ../../htmls/meio/principal.php');
             
         }
     }
     else
     {
             //não acessa
-            header('Location: ../htmls/inicio/login.html');
+            header('Location: ../../htmls/inicio/login.html');
     }
 
 ?>
