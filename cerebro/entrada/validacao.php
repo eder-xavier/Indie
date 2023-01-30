@@ -22,7 +22,7 @@
         else{
             $_SESSION['usuario'] = $usuario;
             $_SESSION['senha'] = $senha;
-            header('Location: ../../htmls/meio/principal.php');
+            header('Location: principal.php');
             
         }
     }
