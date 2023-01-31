@@ -40,9 +40,9 @@
     <header>
     <nav>
     
-    <!--
-     <input type="search" name="barpesquisa" id="barpesquisa"> 
-     -->
+
+     <input type="search" name="barpesq" id="pesqbar" placeholder="Pesquisar">
+
      <img src="../../imagens/logo-indie.png" alt="logo indie" id="logo">
 
 
@@ -51,7 +51,7 @@
     </span>
 
      <menu id="itens">
-        <!--
+            <!--
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -63,7 +63,7 @@
         -->
         menu
      </menu>
-        
+
     </nav>
     </header>
     <main>

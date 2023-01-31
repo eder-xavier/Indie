@@ -18,21 +18,22 @@ header{
     padding-top: 10px;
 }
 
-/*
-input#pesquisa{
+input#pesqbar{
     color: black;
     position: relative;
-    right: 100px;
+    right: 60px;
     text-align: center;
     bottom: 30px;
     border-radius: 3px;
 
 }
-*/
+
 
 img#logo{
     width: 70px;
     height: 70px;
+    position: relative;
+    
 }
 
 span#burger{
@@ -42,6 +43,7 @@ span#burger{
     left:  40px;
     font-size: 70px;
 }
+
 
 menu#itens{
     color: black;
