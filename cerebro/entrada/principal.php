@@ -32,6 +32,7 @@
     
     <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../estilos/principal/estrutura.css">
+    
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -98,8 +99,17 @@
   </header>
   <main>
 
+    <!-- FEED PROVISORIO AQUI
+
+    <div class="container"></div>
+    <script src="../principal/feed.js"></script>
+    <link rel="stylesheet" href="../../estilos/principal/feed.css">
+    -->
+
   </main>
+
     <script src="../principal/transforms.js"></script>
+
 
 
     <!--
