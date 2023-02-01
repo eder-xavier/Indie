@@ -1,6 +1,6 @@
 <?php
 
-//INDENTIFICAÇÃO DE SESSÕES
+    //INDENTIFICAÇÃO DE SESSÕES
     session_start();
     include_once('set.php');
 
@@ -29,52 +29,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indie</title>
-    <link rel="stylesheet" href="../../estilos/principal.css">
-    <script src="../principal/principal.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
+    <link rel="shortcut icon" href="../../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../estilos/principal/estrutura.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 </head>
 <body>
+  <header>
+      <nav>
 
-    <header>
-    <nav>
-    
+        <button id="new">New</button>
+        <a class="logo" href="principal.php"><img id="logo" src="../../imagens/logo-indie3.png" alt="logo"></a>
+        
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
 
-     <input type="search" name="barpesq" id="pesqbar" placeholder="Pesquisar">
+        <ul class="nav-list">
 
-     <img src="../../imagens/logo-indie.png" alt="logo indie" id="logo">
+          <li>
+          <a id="l" name="notific"  href="#"> <span id="notific" class='material-symbols-outlined'>
+            notifications
+          </span> Notifications </a>
+          </li>
 
+          <li>
+            <a id="l" name="social"  href="#"> <span id="social" class='material-symbols-outlined'>
+              public
+            </span>Social</a>
+          </li>
 
-     <span id="burger" class="material-symbols-outlined" onclick="menuclick()">
-        menu
-    </span>
+          <li>
+            <a id="l" name="profile"  href="#"> <span id="profile"  class='material-symbols-outlined'>
+              account_circle
+            </span>Profile </a>
+        </li>
 
-     <menu id="itens">
-            <!--
-            <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+          <li>
+            <a id="l" name="archives"  href="#"> <span id="archives" class='material-symbols-outlined'>
+              archive
+            </span>Archives</a>
+          </li>
 
-            </ul>
-        -->
-        menu
-     </menu>
+          <li>
+            <a id="l" name="settings"  href="#"> <span id="settings" class='material-symbols-outlined'>
+              settings
+            </span>Settings</a>
+          </li>
 
-    </nav>
-    </header>
-    <main>
+          <li>
+            <a id="l" name="logout"  href="exit.php"> <span id="logout" class='material-symbols-outlined'>
+              logout
+            </span>Log out</a>
+        </li>
 
-    </main>
-    <footer>
+        </ul>
 
-    </footer>
+      </nav>
+  </header>
+  <main>
+
+  </main>
+    <script src="../principal/transforms.js"></script>
+
 
     <!--
-    <a id='exit' href="exit.php">Log out</a>
+
+    <a href="principal.php"><img src="../../imagens/indie-logo2.png" alt="logo indie" id="logo"></a>
     -->
 
 </body>
